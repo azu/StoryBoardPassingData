@@ -37,7 +37,7 @@
 // Push ボタンを押した時の挙動
 - (IBAction)handlePushButton:(UIButton *) sender {
     BarViewController *barViewController = [self.storyboard instanceWithClass:[BarViewController class]];
-    barViewController.receiveString = @"Pushボタンより渡せされた値";
+    barViewController.receiveString = @"Pushボタンより渡された値";
     [self.navigationController pushViewController:barViewController animated:YES];
 }
 
