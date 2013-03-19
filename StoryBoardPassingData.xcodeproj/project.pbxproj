@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B5C033314DB170E7A2021E /* BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C1A254D503979FDE2CB4 /* BarViewController.m */; };
+		17B5C691A2DFEE9F92AA41B0 /* UIStoryboard+InstanceViewControllerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CDD59BFAD21E70935DC2 /* UIStoryboard+InstanceViewControllerClass.m */; };
+		17B5C7B5295DC26D32C19CDE /* FooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0DB12235616C912DF59 /* FooViewController.m */; };
 		7320950D16F8C0F200E96417 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7320950C16F8C0F200E96417 /* UIKit.framework */; };
 		7320950F16F8C0F200E96417 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7320950E16F8C0F200E96417 /* Foundation.framework */; };
 		7320951116F8C0F200E96417 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7320951016F8C0F200E96417 /* CoreGraphics.framework */; };
@@ -16,9 +19,16 @@
 		7320951F16F8C0F200E96417 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7320951E16F8C0F200E96417 /* Default.png */; };
 		7320952116F8C0F200E96417 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7320952016F8C0F200E96417 /* Default@2x.png */; };
 		7320952316F8C0F200E96417 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7320952216F8C0F200E96417 /* Default-568h@2x.png */; };
+		7320952A16F8C19C00E96417 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7320952916F8C19C00E96417 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17B5C0DB12235616C912DF59 /* FooViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooViewController.m; sourceTree = "<group>"; };
+		17B5C1A254D503979FDE2CB4 /* BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarViewController.m; sourceTree = "<group>"; };
+		17B5C228DEA0C0A83B520D1A /* FooViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooViewController.h; sourceTree = "<group>"; };
+		17B5C7EEF1A0A5CC0A6C9E66 /* BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarViewController.h; sourceTree = "<group>"; };
+		17B5CAAEE15948AABED1E956 /* UIStoryboard+InstanceViewControllerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+InstanceViewControllerClass.h"; sourceTree = "<group>"; };
+		17B5CDD59BFAD21E70935DC2 /* UIStoryboard+InstanceViewControllerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+InstanceViewControllerClass.m"; sourceTree = "<group>"; };
 		7320950916F8C0F200E96417 /* StoryBoardPassingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoardPassingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7320950C16F8C0F200E96417 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7320950E16F8C0F200E96417 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +42,7 @@
 		7320951E16F8C0F200E96417 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7320952016F8C0F200E96417 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7320952216F8C0F200E96417 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7320952916F8C19C00E96417 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +59,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B5C3BC0C746D17ABCAED4A /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CAAEE15948AABED1E956 /* UIStoryboard+InstanceViewControllerClass.h */,
+				17B5CDD59BFAD21E70935DC2 /* UIStoryboard+InstanceViewControllerClass.m */,
+			);
+			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		17B5C493DC117C8470F9DD78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C228DEA0C0A83B520D1A /* FooViewController.h */,
+				17B5C0DB12235616C912DF59 /* FooViewController.m */,
+				17B5C7EEF1A0A5CC0A6C9E66 /* BarViewController.h */,
+				17B5C1A254D503979FDE2CB4 /* BarViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17B5CEAA95D704687B22AA77 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C3BC0C746D17ABCAED4A /* UIStoryboard */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		7320950016F8C0F200E96417 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +120,9 @@
 				7320951B16F8C0F200E96417 /* AppDelegate.h */,
 				7320951C16F8C0F200E96417 /* AppDelegate.m */,
 				7320951316F8C0F200E96417 /* Supporting Files */,
+				17B5CEAA95D704687B22AA77 /* Category */,
+				7320952916F8C19C00E96417 /* Storyboard.storyboard */,
+				17B5C493DC117C8470F9DD78 /* ViewControllers */,
 			);
 			path = StoryBoardPassingData;
 			sourceTree = "<group>";
@@ -154,6 +196,7 @@
 				7320951F16F8C0F200E96417 /* Default.png in Resources */,
 				7320952116F8C0F200E96417 /* Default@2x.png in Resources */,
 				7320952316F8C0F200E96417 /* Default-568h@2x.png in Resources */,
+				7320952A16F8C19C00E96417 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +209,9 @@
 			files = (
 				7320951916F8C0F200E96417 /* main.m in Sources */,
 				7320951D16F8C0F200E96417 /* AppDelegate.m in Sources */,
+				17B5C691A2DFEE9F92AA41B0 /* UIStoryboard+InstanceViewControllerClass.m in Sources */,
+				17B5C7B5295DC26D32C19CDE /* FooViewController.m in Sources */,
+				17B5C033314DB170E7A2021E /* BarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryBoardPassingData/StoryBoardPassingData-Prefix.pch";
 				INFOPLIST_FILE = "StoryBoardPassingData/StoryBoardPassingData-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +303,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryBoardPassingData/StoryBoardPassingData-Prefix.pch";
 				INFOPLIST_FILE = "StoryBoardPassingData/StoryBoardPassingData-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,6 +328,7 @@
 				7320952816F8C0F200E96417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
